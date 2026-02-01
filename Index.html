@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke Mawer Consulting | Learning Design & Strategy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #0891b2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-xl font-bold tracking-tight text-slate-800">LUKE MAWER<span class="text-blue-600">.</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="#services" class="text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Services</a>
+                        <a href="#methodology" class="text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Methodology</a>
+                        <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-all shadow-md">Get in Touch</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-600 hover:text-slate-900 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 py-4 space-y-1">
+            <a href="#home" class="block px-3 py-2 text-base font-medium text-slate-600">Home</a>
+            <a href="#services" class="block px-3 py-2 text-base font-medium text-slate-600">Services</a>
+            <a href="#methodology" class="block px-3 py-2 text-base font-medium text-slate-600">Methodology</a>
+            <a href="#contact" class="block px-3 py-2 text-base font-medium text-blue-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center relative">
+            <div class="absolute -top-24 -left-24 w-64 h-64 bg-blue-100 rounded-full blur-3xl opacity-50 -z-10"></div>
+            <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-cyan-100 rounded-full blur-3xl opacity-50 -z-10"></div>
+            
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 mb-6">
+                Transforming Learning through <br>
+                <span class="gradient-text">Strategic Design.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Luke Mawer Consulting helps organizations bridge the gap between complex knowledge and effective learning experiences.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold shadow-lg shadow-blue-200 hover:bg-blue-700 hover:shadow-xl transition-all">Start a Project</a>
+                <a href="#services" class="px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-lg font-semibold hover:bg-slate-50 transition-all">View Expertise</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold tracking-widest text-blue-600 uppercase mb-2">Capabilities</h2>
+                <p class="text-3xl md:text-4xl font-bold text-slate-900">Specialized Solutions</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card p-8 bg-slate-50 rounded-2xl border border-slate-100 shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Curriculum Architecture</h3>
+                    <p class="text-slate-600 leading-relaxed">Developing comprehensive learning frameworks that align with business goals and learner needs.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card p-8 bg-slate-50 rounded-2xl border border-slate-100 shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 21h6l-.75-4M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">EdTech Integration</h3>
+                    <p class="text-slate-600 leading-relaxed">Strategic selection and implementation of learning technologies that actually improve outcomes.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card p-8 bg-slate-50 rounded-2xl border border-slate-100 shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">L&D Performance Consulting</h3>
+                    <p class="text-slate-600 leading-relaxed">Auditing current training programs to identify performance gaps and ROI opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-sm font-bold tracking-widest text-blue-400 uppercase mb-4">The Process</h2>
+                    <h3 class="text-3xl md:text-5xl font-bold mb-8">Data-driven design. Human-centered learning.</h3>
+                    <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                        I don't just create content. I design systems. My methodology combines instructional design science with modern UX principles to create experiences that resonate.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-3 mt-1">✓</span>
+                            <span>Discovery and Needs Analysis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-3 mt-1">✓</span>
+                            <span>Prototyping & Iterative Design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-3 mt-1">✓</span>
+                            <span>Implementation Strategy & Training</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-slate-800 p-8 rounded-2xl aspect-square flex flex-col justify-center">
+                        <span class="text-4xl font-bold text-blue-400 mb-2">95%</span>
+                        <span class="text-sm text-slate-400">Learner Engagement</span>
+                    </div>
+                    <div class="bg-slate-800 p-8 rounded-2xl aspect-square flex flex-col justify-center mt-8">
+                        <span class="text-4xl font-bold text-cyan-400 mb-2">10+</span>
+                        <span class="text-sm text-slate-400">Years Experience</span>
+                    </div>
+                    <div class="bg-slate-800 p-8 rounded-2xl aspect-square flex flex-col justify-center -mt-8">
+                        <span class="text-4xl font-bold text-indigo-400 mb-2">50+</span>
+                        <span class="text-sm text-slate-400">Projects Delivered</span>
+                    </div>
+                    <div class="bg-slate-800 p-8 rounded-2xl aspect-square flex flex-col justify-center">
+                        <span class="text-4xl font-bold text-emerald-400 mb-2">ROI</span>
+                        <span class="text-sm text-slate-400">Focused Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to elevate your learning strategy?</h2>
+            <p class="text-slate-600 text-lg mb-10">
+                Whether you need a full curriculum overhaul or advice on your next EdTech purchase, let's talk.
+            </p>
+            <div id="contact-form-container" class="bg-slate-50 p-8 md:p-12 rounded-3xl shadow-xl border border-slate-100">
+                <div id="success-message" class="hidden text-green-600 font-bold p-4 mb-4 bg-green-50 rounded-lg">
+                    Message sent successfully! I'll be in touch soon.
+                </div>
+                <form id="contact-form" class="space-y-4 text-left">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">Name</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">Email</label>
+                            <input type="email" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-1">How can I help?</label>
+                        <textarea rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-lg shadow-lg hover:bg-blue-700 transition-all active:scale-95">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 py-12 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="mb-8">
+                <span class="text-xl font-bold tracking-tight text-slate-800">LUKE MAWER<span class="text-blue-600">.</span></span>
+                <p class="text-slate-500 text-sm mt-2">Professional Learning Design Consulting</p>
+            </div>
+            <div class="flex justify-center space-x-6 mb-8 text-slate-400">
+                <a href="#" class="hover:text-blue-600 transition-colors">LinkedIn</a>
+                <a href="#" class="hover:text-blue-600 transition-colors">Twitter</a>
+                <a href="#" class="hover:text-blue-600 transition-colors">Medium</a>
+            </div>
+            <p class="text-slate-400 text-xs">
+                &copy; 2026 Luke Mawer Consulting. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Simple form handling
+        const form = document.getElementById('contact-form');
+        const success = document.getElementById('success-message');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            form.classList.add('opacity-50', 'pointer-events-none');
+            // Simulate API call
+            setTimeout(() => {
+                form.reset();
+                form.classList.add('hidden');
+                success.classList.remove('hidden');
+            }, 1000);
+        });
+
+        // Close menu when link is clicked
+        const menuLinks = menu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
